@@ -40,7 +40,7 @@ class PersonalAccountPage(BasePage):
         recovery_button = self.wait_and_find_element(PersonalAccountLocators.RECOVERY_BUTTON)
         self.click_element(recovery_button)
 
-    @allure.step("Проверить что открылcя Личный кабинет")
+    @allure.step("Проверить что открылся Личный кабинет")
     def check_account_description(self):
         if self.is_element_present(PersonalAccountLocators.DESCRIPTION_ACCOUNT):
             return True

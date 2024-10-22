@@ -15,7 +15,7 @@ class OrderListPage(BasePage):
         element = self.wait_and_find_element(OrderListPageLocators.ORDER_NUMBER_IN_HISTORY)
         return element.text
 
-    @allure.step("Получить значение счётчика заказаов на странице 'Лента заказов'")
+    @allure.step("Получить значение счётчика заказов на странице 'Лента заказов'")
     def get_orders_counter(self):
         number = self.wait_and_find_element(OrderListPageLocators.ORDER_COUNTER)
         return int(number.text)
@@ -25,12 +25,12 @@ class OrderListPage(BasePage):
         constructor_button = self.wait_and_find_element(OrderListPageLocators.CONSTRUCTOR_BTN)
         self.click_element(constructor_button)
 
-    @allure.step("Получить значение счётчика 'Выполнено за сегодня' заказаов на странице 'Лента заказов'")
+    @allure.step("Получить значение счётчика 'Выполнено за сегодня' заказав на странице 'Лента заказов'")
     def get_orders_counter_today(self):
         number = self.wait_and_find_element(OrderListPageLocators.ORDER_COUNTER_TODAY)
         return int(number.text)
 
-    @allure.step("Получить номер заказа в разделе 'В работе' на экране Ллента заказов'")
+    @allure.step("Получить номер заказа в разделе 'В работе' на экране Лента заказов'")
     def get_order_in_works_number(self):
         number_in_works = self.wait_and_find_element(OrderListPageLocators.ORDER_IN_WORK)
         return int(number_in_works.text)

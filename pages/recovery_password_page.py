@@ -34,7 +34,7 @@ class RecoveryPasswordPage(BasePage):
         if self.is_element_present(RecoveryPassPageLocators.RECOVER_TITLE):
             return True
 
-    @allure.step("Проверить что открылся экран восстановления пароля поссле ввода пароля")
+    @allure.step("Проверить что открылся экран восстановления пароля после ввода пароля")
     def check_recovery_pass_title(self):
         if self.is_element_present(RecoveryPassPageLocators.RECOVER_TITLE):
             return True
