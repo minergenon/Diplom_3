@@ -1,4 +1,3 @@
-from selenium.webdriver.support.wait import WebDriverWait
 from seletools.actions import drag_and_drop
 from pages.base_page import BasePage
 from data import Urls
