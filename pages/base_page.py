@@ -23,3 +23,6 @@ class BasePage:
 
     def click_element(self, locator):
         self.driver.execute_script("arguments[0].click();", locator)
+
+    def wait_for_text_change(self, element, initial_text):
+        WebDriverWait(self.driver, 10).until(lambda driver: element.text != initial_text)
